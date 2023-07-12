@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #c026d3;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#searchForm {
+  margin-inline: 35vw;
+  margin-block: 3rem;
+  display: flex;
+}
+#searchForm input {
+  width: 30rem;
+  height: 3rem;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+}
+#searchForm input:focus {
+  outline: none;
+}
+#submitButton {
+  height: 3rem;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  border: none;
+}
+.cards-parent {
+  display: flex;
+  margin: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-inline: 2rem;
+}
+
+.card {
+  height: auto;
+  width: 17rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card-image {
+  width: 100%;
+  height: 14rem;
+  object-fit: fill;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+.movie-type span {
+  background-color: #c026d3;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
